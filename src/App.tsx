@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { FileText, Download, Copy, Trash, Settings, Info } from 'lucide-react';
+import { FileText, Download, Copy, Trash, Settings, Info, Coffee } from 'lucide-react';
 
 function App() {
   const [text, setText] = useState('');
@@ -187,6 +187,17 @@ function App() {
                 Sometimes the simplest solutions come from the laziest problems! 
               </p>
             </div>
+
+            {/* Add Buy Me a Coffee Link */}
+            <a
+              href="https://buymeacoffee.com/ajjuism"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-sm bg-[#FFDD00] text-[#000000] py-2 px-4 rounded-lg hover:bg-[#FFED4A] transition-colors duration-200 w-fit"
+            >
+              <Coffee className="w-4 h-4" />
+              <span>Buy me a coffee</span>
+            </a>
 
             <div className="pt-2 border-t border-[#404040] mt-4">
               <div className="flex items-center gap-2 text-xs text-[#858585]">
